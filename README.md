@@ -46,3 +46,79 @@ This is ==highlighted==
 **and basic code format**
 
 JS Variable: `let x = 1` 
+
+# Homework 1
+
+```markdown
+### 1. **Verificar el estado de un repositorio local:**
+```bash 
+   git status
+```
+
+---
+
+### 2. **Agregar archivos individuales o globalmente:**
+- **Archivo individual:**
+  ```bash
+  git add <archivo>
+  ```
+- **Todos los archivos:**
+  ```bash
+  git add .
+  ```
+
+---
+
+### 3. **Agregar comentarios al commit:**
+```bash
+git commit -m "Mensaje descriptivo"
+```
+
+---
+
+### 4. **Subir cambios al repositorio remoto:**
+```bash
+git push origin <rama>
+# Opcional (si ya sigues la rama remota):
+git push
+```
+
+---
+
+### 5. **Gestionar ramas:**
+- **Crear rama:**
+  ```bash
+  git branch <nombre-rama>
+  ```
+- **Cambiar a rama:**
+  ```bash
+  git checkout <nombre-rama>
+  # Crear y cambiar en un paso:
+  git checkout -b <nombre-rama>
+  ```
+- **Listar ramas:**
+  ```bash
+  git branch
+  ```
+- **Eliminar rama:**
+  ```bash
+  git branch -d <nombre-rama> # Eliminación segura
+  git branch -D <nombre-rama> # Eliminación forzada
+  ```
+
+---
+
+### 6. **Revertir a un commit específico:**
+1. **Obtener hash del commit:**
+   ```bash
+   git log --oneline
+   ```
+2. **Resetear cambios (peligroso):**
+   ```bash
+   git reset --hard <hash-commit>
+   ```
+3. **Revertir sin perder cambios posteriores:**
+   ```bash
+   git revert <hash-commit>
+   ```
+```
